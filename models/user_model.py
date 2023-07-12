@@ -2,14 +2,14 @@ import datetime
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(frozen=True)
 class UserModel:
     username: str
     email: str
     password: str
 
 
-@dataclass
+@dataclass(frozen=True)
 class UserModelOutput:
     user_id: str
     username: str
